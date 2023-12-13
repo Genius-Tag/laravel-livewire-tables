@@ -25,7 +25,7 @@
                         <div wire:key="columnSelect-{{ $loop->index }}">
                             <label class="px-2 {{ $loop->last ? 'mb-0' : 'mb-1' }}">
                                 <input
-                                    wire:model="columnSelectEnabled"
+                                    wire:model.live="columnSelectEnabled"
                                     wire:target="columnSelectEnabled"
                                     wire:loading.attr="disabled"
                                     type="checkbox"

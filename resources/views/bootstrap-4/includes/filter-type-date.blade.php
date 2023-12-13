@@ -1,6 +1,6 @@
 <div class="mb-3 mb-md-0 input-group">
     <input
-        wire:model="filters.{{ $key }}"
+        wire:model.live="filters.{{ $key }}"
         wire:key="filter-{{ $key }}"
         id="filter-{{ $key }}"
         type="date"

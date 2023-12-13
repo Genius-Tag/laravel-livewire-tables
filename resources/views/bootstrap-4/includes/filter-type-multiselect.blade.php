@@ -16,7 +16,7 @@
             onclick="event.stopPropagation();"
             type="checkbox"
             id="filter-{{$key}}-{{ $loop->index }}"
-            wire:model="filters.{{$key}}"
+            wire:model.live="filters.{{$key}}"
             value="{{ $optionKey }}"
         >
         <label class="form-check-label" for="filter-{{$key}}-{{ $loop->index }}">{{ $value }}</label>

@@ -1,6 +1,6 @@
 <select
     onclick="event.stopPropagation();"
-    wire:model="filters.{{ $key }}"
+    wire:model.live="filters.{{ $key }}"
     id="filter-{{ $key }}"
     class="form-select"
 >

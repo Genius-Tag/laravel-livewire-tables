@@ -1,7 +1,7 @@
 @if ($paginationEnabled && $showPerPage)
     <div class="ml-0 ml-md-2">
         <select
-            wire:model="perPage"
+            wire:model.live="perPage"
             id="perPage"
             class="form-control"
         >

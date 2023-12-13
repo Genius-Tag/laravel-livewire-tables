@@ -49,13 +49,13 @@ trait WithSearch
         }
 
         if ($this->searchFilterDefer) {
-            return '.defer';
+            return '';
         }
 
         if ($this->searchFilterLazy) {
-            return '.lazy';
+            return '.blur';
         }
 
-        return '';
+        return '.live';
     }
 }

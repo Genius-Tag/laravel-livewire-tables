@@ -13,7 +13,7 @@
         @if ($bulkActionsEnabled && count($this->bulkActions))
             <x-livewire-tables::bs5.table.heading>
                 <input
-                    wire:model="selectPage"
+                    wire:model.live="selectPage"
                     class="form-check-input"
                     type="checkbox"
                 />
@@ -115,7 +115,7 @@
                 @if ($bulkActionsEnabled && count($this->bulkActions))
                     <x-livewire-tables::bs5.table.cell class="align-middle">
                         <input
-                            wire:model="selected"
+                            wire:model.live="selected"
                             wire:loading.attr.delay="disabled"
                             value="{{ $row->{$this->parseField($primaryKey)} }}"
                             onclick="event.stopPropagation();return true;"

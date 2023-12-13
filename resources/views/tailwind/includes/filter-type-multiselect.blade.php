@@ -14,7 +14,7 @@
                 type="checkbox"
                 id="filter-{{$key}}-{{ $loop->index }}"
                 wire:key="filter-{{$key}}-{{ $loop->index }}"
-                wire:model="filters.{{$key}}"
+                wire:model.live="filters.{{$key}}"
                 value="{{ $optionKey }}"
             >
             <label for="filter-{{$key}}-{{ $loop->index }}">{{ $value }}</label>

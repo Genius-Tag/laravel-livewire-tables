@@ -103,8 +103,8 @@ abstract class DataTableComponent extends Component
      * @var \null[][]
      */
     protected $queryString = [
-        'filters' => ['except' => null],
-        'sorts' => ['except' => null],
+        'filters',
+        'sorts',
     ];
 
     /**
@@ -199,7 +199,7 @@ abstract class DataTableComponent extends Component
      */
     public function rowView(): string
     {
-        return 'livewire-tables::'.config('livewire-tables.theme').'.components.table.row-columns';
+        return 'livewire-tables::' . config('livewire-tables.theme') . '.components.table.row-columns';
     }
 
     /**
@@ -217,7 +217,7 @@ abstract class DataTableComponent extends Component
      */
     public function render()
     {
-        return view('livewire-tables::'.config('livewire-tables.theme').'.datatable')
+        return view('livewire-tables::' . config('livewire-tables.theme') . '.datatable')
             ->with([
                 'columns' => $this->columns(),
                 'rowView' => $this->rowView(),
