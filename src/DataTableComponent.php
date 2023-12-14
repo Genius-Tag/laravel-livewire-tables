@@ -131,10 +131,8 @@ abstract class DataTableComponent extends Component
      *
      * @param null $id
      */
-    public function __construct($id = null)
+    public function __construct()
     {
-        parent::__construct($id);
-
         $theme = config('livewire-tables.theme');
 
         if ($theme === 'bootstrap-4' || $theme === 'bootstrap-5') {
